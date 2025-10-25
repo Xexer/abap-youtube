@@ -1,6 +1,7 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Header'
 @VDM.viewType: #BASIC
+@VDM.private: true
 define view entity ZBS_B_YTBHeader
   as select from zbs_ytb_header as Header
 {
