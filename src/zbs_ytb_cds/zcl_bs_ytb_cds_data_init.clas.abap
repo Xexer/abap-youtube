@@ -31,7 +31,10 @@ CLASS zcl_bs_ytb_cds_data_init DEFINITION
 ENDCLASS.
 
 
-CLASS zcl_bs_ytb_cds_data_init IMPLEMENTATION.
+
+CLASS ZCL_BS_YTB_CDS_DATA_INIT IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
     actual_user = xco_cp=>sy->user( )->name.
 

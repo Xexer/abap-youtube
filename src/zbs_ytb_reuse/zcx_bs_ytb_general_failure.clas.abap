@@ -37,7 +37,10 @@ CLASS zcx_bs_ytb_general_failure DEFINITION
 ENDCLASS.
 
 
-CLASS zcx_bs_ytb_general_failure IMPLEMENTATION.
+
+CLASS ZCX_BS_YTB_GENERAL_FAILURE IMPLEMENTATION.
+
+
   METHOD constructor ##ADT_SUPPRESS_GENERATION.
     super->constructor( previous = previous ).
     CLEAR me->textid.

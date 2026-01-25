@@ -7,7 +7,10 @@ CLASS zcl_bs_ytb_class_runner DEFINITION
 ENDCLASS.
 
 
-CLASS zcl_bs_ytb_class_runner IMPLEMENTATION.
+
+CLASS ZCL_BS_YTB_CLASS_RUNNER IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
     out->write( `Hello GitHub` ).
   ENDMETHOD.

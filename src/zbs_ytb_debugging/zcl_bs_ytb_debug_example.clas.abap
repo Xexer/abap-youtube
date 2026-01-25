@@ -30,7 +30,10 @@ CLASS zcl_bs_ytb_debug_example DEFINITION
 ENDCLASS.
 
 
-CLASS zcl_bs_ytb_debug_example IMPLEMENTATION.
+
+CLASS ZCL_BS_YTB_DEBUG_EXAMPLE IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
     DATA(table_content) = get_table_content( ).
 
