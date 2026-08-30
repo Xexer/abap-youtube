@@ -1,0 +1,53 @@
+@Metadata.layer: #CUSTOMER
+annotate entity ZBS_C_YTBCustomObjects with
+{
+  @UI.facet: [
+    {
+      id: 'idGeneral',
+      label: 'General Information',
+      position: 10 ,
+      type: #IDENTIFICATION_REFERENCE,
+      targetQualifier: 'GENERAL'
+    },
+    {
+      id: 'idSWC',
+      label: 'Software Component',
+      position: 20,
+      type: #IDENTIFICATION_REFERENCE,
+      targetQualifier: 'SWC'
+    }
+  ]
+
+  @UI.hidden: true
+  ABAPObjectCategory;
+
+  @UI.selectionField: [ { position: 20  } ]
+  @UI.lineItem: [ { position: 20  } ]
+  @UI.identification: [ { position: 20 , qualifier: 'GENERAL' } ]
+  ABAPObjectType;
+
+  @UI.selectionField: [ { position: 30  } ]
+  @UI.lineItem: [ { position: 30  } ]
+  @UI.identification: [ { position: 30 , qualifier: 'GENERAL' } ]
+  ABAPObject;
+
+  @UI.hidden: true
+  ABAPObjectResponsibleUser;
+
+  @UI.hidden: true
+  ABAPObjectIsDeleted;
+
+  @UI.selectionField: [ { position: 40 } ]
+  @UI.lineItem: [ { position: 60  } ]
+  @UI.identification: [ { position: 60 , qualifier: 'GENERAL' } ]
+  ABAPPackage;
+
+  @UI.lineItem: [ { position: 70  } ]
+  @UI.identification: [ { position: 70 , qualifier: 'SWC' } ]
+  ABAPSoftwareComponent;
+
+  @UI.lineItem: [ { position: 80  } ]
+  @UI.identification: [ { position: 80 , qualifier: 'SWC' } ]
+  ComponentName;
+
+}

@@ -1,0 +1,5 @@
+@EndUserText.label: 'Custom Objects'
+@ObjectModel.leadingEntity.name: 'ZBS_C_YTBCustomObjects'
+define service ZBS_YTB_CUSTOM_OBJECTS {
+  expose ZBS_C_YTBCustomObjects as CustomObjects;
+}
